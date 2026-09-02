@@ -1,4 +1,5 @@
-# Garbage-Classification
+
+
 # ♻️ Garbage Classification Using Deep Learning
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
@@ -31,12 +32,21 @@ The objective is to determine which model provides the best balance between **cl
 
 ---
 
-## 📁 Dataset
+## 📁 Dataset & Class Distribution
 
 * **Source:** Kaggle – Garbage Classification Dataset
-* **Classes (6):** Cardboard, Glass, Metal, Paper, Plastic, Trash.
-* **Image Resolution:** 224 × 224 RGB.
-* **Data Split:** Train (~70%), Validation (~15%), Test (~15%).
+* **Image Resolution:** 224 × 224 RGB
+* **Data Split:** Train (~70%), Validation (~15%), Test (~15%)
+
+### Classes & Sample Distribution:
+| Class Name | Description & Visual Contents | Image Count |
+| :--- | :--- | :---: |
+| 📦 **Cardboard** | Corrugated boxes, packaging cartons, brown paper containers | **806** |
+| 🍾 **Glass** | Glass bottles, jars, broken glass fragments | **1,002** |
+| 🔩 **Metal** | Aluminum cans, metal tins, scrap metals | **820** |
+| 📄 **Paper** | Office paper, newspapers, magazines, notebooks | **1,188** |
+| 🥤 **Plastic** | Plastic bottles, containers, wrappers, disposable cups | **964** |
+| 🗑️ **Trash** | Mixed general waste, non-recyclable debris | **274** |
 
 ---
 
@@ -63,20 +73,9 @@ The three models were evaluated using the test dataset and compared based on acc
 * Google Colab
 
 ---
-## 📂 Project Structure
 
-```text
-Garbage_Classification_DeepLearning/
-│
-├── app/
-│   └── Garbage_Classification_DeepLearning.ipynb  # Colab Notebook
-│
-├── data/
-│   └── dataset/                                   # Garbage Classification Dataset
-│
-├── models/
-│   ├── basit_cnn_atik_modeli.keras                # Saved CNN Model
-│   ├── mobilenetv2_atik_modeli.keras              # Saved MobileNetV2 Model
-│   └── best.pt                                    # Saved YOLOv8 Weights
-│
-└── README.md
+## 🚀 Conclusion & Industrial Recommendation
+
+* **YOLOv8-cls** achieved the highest accuracy, smallest size, and fastest inference time, making it the most suitable model for real-time industrial waste sorting on conveyor belts.
+* **MobileNetV2** performed well as a secondary option via Transfer Learning.
+* **Baseline CNN** served as a reference model but showed limitations due to its shallow architecture.
