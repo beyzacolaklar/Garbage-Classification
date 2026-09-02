@@ -1,5 +1,3 @@
-
-
 # ♻️ Garbage Classification Using Deep Learning
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
@@ -22,16 +20,6 @@ The objective is to determine which model provides the best balance between **cl
 
 ---
 
-## 🎯 Project Objectives
-
-* Build a baseline Convolutional Neural Network (CNN) from scratch.
-* Apply Transfer Learning using MobileNetV2.
-* Train an image classification model using YOLOv8-cls.
-* Compare all models under identical evaluation criteria (Accuracy, Precision, Recall, F1-Score).
-* Measure computational efficiency using model size, parameter count, and inference time.
-
----
-
 ## 📁 Dataset & Class Distribution
 
 * **Source:** Kaggle – Garbage Classification Dataset
@@ -47,6 +35,16 @@ The objective is to determine which model provides the best balance between **cl
 | 📄 **Paper** | Office paper, newspapers, magazines, notebooks | **1,188** |
 | 🥤 **Plastic** | Plastic bottles, containers, wrappers, disposable cups | **964** |
 | 🗑️ **Trash** | Mixed general waste, non-recyclable debris | **274** |
+
+---
+
+## 🎯 Project Objectives
+
+* Build a baseline Convolutional Neural Network (CNN) from scratch.
+* Apply Transfer Learning using MobileNetV2.
+* Train an image classification model using YOLOv8-cls.
+* Compare all models under identical evaluation criteria (Accuracy, Precision, Recall, F1-Score).
+* Measure computational efficiency using model size, parameter count, and inference time.
 
 ---
 
@@ -79,3 +77,4 @@ The three models were evaluated using the test dataset and compared based on acc
 * **YOLOv8-cls** achieved the highest accuracy, smallest size, and fastest inference time, making it the most suitable model for real-time industrial waste sorting on conveyor belts.
 * **MobileNetV2** performed well as a secondary option via Transfer Learning.
 * **Baseline CNN** served as a reference model but showed limitations due to its shallow architecture.
+
