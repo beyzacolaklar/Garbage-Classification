@@ -63,7 +63,6 @@ The three models were evaluated using the test dataset and compared based on acc
 * Google Colab
 
 ---
-
 ## 📂 Project Structure
 
 ```text
